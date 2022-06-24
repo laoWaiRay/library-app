@@ -4,4 +4,17 @@ body{
 
 .section-main{
     padding: 5rem;
+    flex: 1;
+}
+
+.bookDisplay{
+    // background-color: white;
+    width: 100%;
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 3rem;
 }

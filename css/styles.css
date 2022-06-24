@@ -9,6 +9,10 @@ a {
   color: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -21,6 +25,7 @@ body {
   font-size: 1.6rem;
   color: #000;
   min-height: 100vh;
+  position: relative;
 }
 
 .heading-primary {
@@ -47,9 +52,62 @@ body {
   fill: #FEFAE0;
 }
 
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  width: fit-content;
+  display: none;
+  padding: 1.5rem 2rem;
+  transition: 500ms;
+  position: relative;
+}
+.card__header {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  margin: 0;
+}
+.card__list {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card__item--isRead {
+  border: 1px solid blue;
+  color: blue;
+  padding: 1rem;
+  align-self: flex-end;
+}
+.card__item--isRead:hover {
+  cursor: pointer;
+}
+.card__item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.card__img {
+  width: 30rem;
+  cursor: pointer;
+}
+.card__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  opacity: 0;
+  transition: 500ms;
+}
+.card__close:hover {
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card:hover .card__close {
+  opacity: 1;
+}
+
 .sidebar {
   background-color: #D4A373;
-  height: 100vh;
+  min-height: 100vh;
   width: 10%;
   padding: 0;
 }
@@ -60,10 +118,21 @@ body {
 
 .section-main {
   padding: 5rem;
+  flex: 1;
+}
+
+.bookDisplay {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 3rem;
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

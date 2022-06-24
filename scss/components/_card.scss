@@ -1,0 +1,64 @@
+.card{
+    // border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    display: none;
+    padding: 1.5rem 2rem;
+    transition: 500ms;
+    position: relative;
+
+    &__header{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    &__list{
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__item{
+        &--isRead{
+            border: 1px solid blue;
+            color: blue;
+            padding: 1rem;
+            align-self: flex-end;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: .5rem;
+    }
+
+    &__img{
+        width: 30rem;
+        cursor: pointer;
+    }
+
+    &__close{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        opacity: 0;
+        transition: 500ms;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &:hover{
+        transform: translateY(-5px);
+
+        .card__close{
+            opacity: 1;
+        }
+    }
+}
