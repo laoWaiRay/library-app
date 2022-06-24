@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="heading-primary">Library.io</h1>
+    <a href="#popup" class="btn btn-newBook">Add a book</a>
+    <div class="popup" id="popup">
+
+        <div class="popup__background"></div>
+
+        <div class="popup__form">
+           
+            <form action="#" class="form">
+                <a href="#" class="popup__close">✕</a>
+                <div class="form__group">
+                    <label for="title" class="form__label">Title:</label>
+                    <input type="text" class="form__input" id="title" name="title">
+                </div>
+                <div class="form__group">
+                    <label for="author" class="form__label">Author:</label>
+                    <input type="text" class="form__input" id="author" name="">
+                </div>
+                <div class="form__group">
+                    <label for="pages" class="form__label">Pages:</label>
+                    <input type="number" class="form__input" id="pages" name="">
+                </div>
+                <div class="form__group">
+                    <label for="isRead" class="form__label">isRead:</label>
+                    <input type="checkbox" class="form__input" id="isRead" name="">
+                </div>
+                
+                <button class="form__submit">Add Book</button>
+               
+            </form>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
