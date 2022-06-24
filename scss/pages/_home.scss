@@ -30,18 +30,6 @@
         right: 2.5rem;
     }
 
-    &:target{
-        z-index: 1;
-
-        .popup__background{
-            opacity: .9;
-        }
-
-        .form{
-            opacity: 1;
-        }
-    
-    }
 
     &__form{
         display: flex;
@@ -60,6 +48,7 @@
             &__group{
                 padding: 1rem;
                 display: flex;
+                align-items: center;
             }
             &__label{
                 padding: 1rem;
@@ -80,8 +69,21 @@
                 padding: 2rem;
                 border: none;
                 border-radius: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(188, 188, 188);
+                }
             }
         }
     }
    
+}
+
+
+
+.icon-plus{
+    width: 3rem;
+    height: 3rem;
+    fill: #D4A373;
 }

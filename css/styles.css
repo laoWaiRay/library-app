@@ -15,17 +15,51 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #e2e0e0;
+  background-color: #FAEDCD;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   color: #000;
-  padding: 5rem;
   min-height: 100vh;
 }
 
 .heading-primary {
   font-size: 5rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.btn-newBook {
+  display: inline-block;
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 3px;
+  border: 1px solid #D4A373;
+  transition: all 500ms;
+}
+.btn-newBook:hover {
+  background-color: #D4A373;
+}
+.btn-newBook:hover .icon-plus {
+  fill: #FEFAE0;
+}
+
+.sidebar {
+  background-color: #D4A373;
+  height: 100vh;
+  width: 10%;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.section-main {
+  padding: 5rem;
 }
 
 .popup {
@@ -58,15 +92,6 @@ body {
   top: 2rem;
   right: 2.5rem;
 }
-.popup:target {
-  z-index: 1;
-}
-.popup:target .popup__background {
-  opacity: 0.9;
-}
-.popup:target .form {
-  opacity: 1;
-}
 .popup__form {
   display: flex;
   justify-content: center;
@@ -83,6 +108,7 @@ body {
 .popup__form .form__group {
   padding: 1rem;
   display: flex;
+  align-items: center;
 }
 .popup__form .form__label {
   padding: 1rem;
@@ -101,6 +127,16 @@ body {
   padding: 2rem;
   border: none;
   border-radius: 5px;
+}
+.popup__form .form__submit:hover {
+  cursor: pointer;
+  background-color: rgb(188, 188, 188);
+}
+
+.icon-plus {
+  width: 3rem;
+  height: 3rem;
+  fill: #D4A373;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -11,39 +11,59 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1 class="heading-primary">Library.io</h1>
-    <a href="#popup" class="btn btn-newBook">Add a book</a>
-    <div class="popup" id="popup">
+    <div class="sidebar">
+        
+    </div>
 
-        <div class="popup__background"></div>
+    <section class="section-main">
 
-        <div class="popup__form">
-           
-            <form action="#" class="form">
-                <a href="#" class="popup__close">✕</a>
-                <div class="form__group">
-                    <label for="title" class="form__label">Title:</label>
-                    <input type="text" class="form__input" id="title" name="title">
-                </div>
-                <div class="form__group">
-                    <label for="author" class="form__label">Author:</label>
-                    <input type="text" class="form__input" id="author" name="">
-                </div>
-                <div class="form__group">
-                    <label for="pages" class="form__label">Pages:</label>
-                    <input type="number" class="form__input" id="pages" name="">
-                </div>
-                <div class="form__group">
-                    <label for="isRead" class="form__label">isRead:</label>
-                    <input type="checkbox" class="form__input" id="isRead" name="">
-                </div>
+        <h1 class="heading-primary">Library.io</h1>
+        <a href="#popup" class="btn btn-newBook">
+            <svg class="icon-plus">
+                <use href="sprite.svg#icon-plus"></use>
+            </svg>
+        </a>
+
+        <h2 class="heading-secondary">Your Books</h2>
+
+
+
+
+
+
+        <div class="popup" id="popup">
+
+            <div class="popup__background"></div>
+
+            <div class="popup__form">
+            
+                <form action="#" class="form">
+                    <a href="#" class="popup__close">✕</a>
+                    <div class="form__group">
+                        <label for="title" class="form__label">Title:</label>
+                        <input type="text" class="form__input form__input--title" id="title" name="title">
+                    </div>
+                    <div class="form__group">
+                        <label for="author" class="form__label">Author:</label>
+                        <input type="text" class="form__input form__input--author" id="author" name="author">
+                    </div>
+                    <div class="form__group">
+                        <label for="pages" class="form__label">Pages:</label>
+                        <input type="number" class="form__input form__input--pages" id="pages" name="pages">
+                    </div>
+                    <div class="form__group">
+                        <label for="isRead" class="form__label">isRead:</label>
+                        <input type="checkbox" class="form__input form__input--checkbox" id="isRead" name="isRead">
+                    </div>
+                    
+                    <button class="form__submit">Add Book</button>
                 
-                <button class="form__submit">Add Book</button>
-               
-            </form>
+                </form>
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
     <script src="app.js"></script>
 </body>

@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "watch:sass": "sass --watch scss/main.scss css/styles.css",
-    "devserver":  "live-server",
-    "start":  "npm-run-all --parallel devserver watch:sass"
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/laoWaiRay/library-app#readme",
   "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
     "npm-run-all": "^4.1.5"
   }
 }
