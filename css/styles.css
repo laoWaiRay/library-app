@@ -129,6 +129,7 @@ body {
   justify-content: space-around;
   gap: 3rem;
   padding: 3rem;
+  padding-top: 2rem;
 }
 
 .popup {
@@ -167,12 +168,14 @@ body {
 }
 .popup__form .form {
   padding: 5rem 8rem;
-  background-color: white;
+  background-color: #E9EDC9;
   opacity: 0;
   border-radius: 4px;
   z-index: 2;
   height: 100%;
   position: relative;
+  color: #000;
+  font-weight: 600;
 }
 .popup__form .form__group {
   padding: 1rem;
@@ -184,22 +187,37 @@ body {
 }
 .popup__form .form__input {
   padding: 0.5rem 1rem;
-  border: 1px solid black;
+  border: none;
   border-radius: 5px;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
+  background-color: #FEFAE0;
+}
+.popup__form .form__input--checkbox {
+  transform: scale(1.5);
+  border-color: transparent;
+}
+.popup__form .form__input--checkbox:hover {
+  cursor: pointer;
+}
+.popup__form .form__input--image {
+  border: none;
+  background-color: transparent;
 }
 .popup__form .form__submit {
   display: block;
   margin: 0 auto;
+  margin-top: 2rem;
   padding: 2rem;
   border: none;
   border-radius: 5px;
+  font-weight: 600;
+  background-color: #FEFAE0;
 }
 .popup__form .form__submit:hover {
   cursor: pointer;
-  background-color: rgb(188, 188, 188);
+  background-color: #CCD5AE;
 }
 
 .icon-plus {
